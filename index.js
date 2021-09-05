@@ -77,8 +77,8 @@ bot.start(async (ctx) => {
         return await ctx.reply('Check Below Buttons to Know more ....',Markup.keyboard(
             [
                 ['📖 Help 📖','↗️ Share ↗️'],
-                ['📥 Request 📥'],
-                ['🧾 List 🧾']
+                ['📥Request'],
+                ['🧾List']
             ]
         )
         .oneTime()
