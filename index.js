@@ -289,7 +289,7 @@ bot.use(Req.middleware())
 
 bot.hears('📥Request',(ctx)=>{
     text = `🎉 use *@imdb* inline and enter query`
-    return Req.replyWithMarkdown(ctx,text)
+    return Req.replyWithText(ctx,text)
 })
 
 bot.hears('🧾List',(ctx)=>{
