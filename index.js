@@ -152,7 +152,7 @@ const ReqQuestion = new TelegrafStatelessQuestion('request',async ctx => {
                     [
                         ['🤖 Bot statics','🔰Help'],
                         ['❕Requests'],
-                        ['💌Broadcast user']
+                        ['💌 Broadcast']
                     ]
                 )
                     .oneTime()
@@ -202,7 +202,7 @@ const broadCastQuestion = new TelegrafStatelessQuestion('broadcastuser',async ct
                     [
                         ['🤖Bot statics','🔰Help'],
                         ['❕Requests'],
-                        ['💌Broadcast user']
+                        ['💌 Broadcast']
                     ]
                 )
                     .oneTime()
@@ -225,7 +225,7 @@ const broadCastQuestion = new TelegrafStatelessQuestion('broadcastuser',async ct
 // Dont forget to use the middleware
 bot.use(broadCastQuestion.middleware())
 
-bot.hears('💌Broadcast user',(ctx)=>{
+bot.hears('💌 Broadcast',(ctx)=>{
     let text = 'Enter message to be brodcasted(only text supported)'
     return broadCastQuestion.replyWithMarkdown(ctx,text)
 
