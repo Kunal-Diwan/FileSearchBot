@@ -1,0 +1,44 @@
+{
+	"name": "JsFileStoreBot",
+	"description": "file storing bot made in JAVA SCRIPT",
+	"repository": "https://github.com/Kunal-Diwan/JsFileStoreBot",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+	"keywords": ["telegram","filestoring","bot","nodejs"],
+	"env": {
+		"TOKEN": {
+			"description": "bot token provided by @botfather",
+            "value":"token"
+		},
+        "DOMAIN":{
+            "description": "enter your app name",
+            "value":"domain"
+		},
+        "DB_URL":{
+            "description": "get mongodb database url from https://www.mongodb.com/cloud/atlas with database name = mediaFile and collection name = fileBackup",
+            "value":"db"
+        },
+        "ADMIN":{
+            "description": "enter your id",
+            "value":"admin_id"
+        },
+        "CHANNEL_USERNAME":{
+            "description": "channel username without @",
+            "value":"channel"
+        },
+        "LOG_GROUP":{
+            "description": "private group id to get user search data",
+            "value":"group"
+        }
+        
+
+
+
+        
+		
+	},
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
