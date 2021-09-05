@@ -106,7 +106,7 @@ bot.hears('🤖 Statics', async (ctx) => {
 bot.hears('❓Help', (ctx) => {
     ctx.deleteMessage()
     if (ctx.from.id == process.env.ADMIN) {
-        ctx.reply('we will soon add tutorials and documentations check @filestoringbot')
+        ctx.reply('we will soon add tutorials and documentations check @DevelopedBots')
     }
 })
 bot.hears('👥 Requests', async (ctx) => {
@@ -289,7 +289,7 @@ bot.use(Req.middleware())
 
 bot.hears('📥Request',(ctx)=>{
     text = `🎉 use *@imdb* inline and enter query`
-    return Req.replyWithText(ctx,text)
+    return Req.replyWithMarkup(ctx,text)
 })
 
 bot.hears('🧾List',(ctx)=>{
