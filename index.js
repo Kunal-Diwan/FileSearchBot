@@ -235,19 +235,19 @@ bot.hears('💌Broadcast user',(ctx)=>{
 
 //defining user buttons 
 
-bot.hears('📖Help',(ctx)=>{
+bot.hears('📖 Help 📖',(ctx)=>{
     ctx.reply(`<b>🔍 NORMAL SEARCH</b>\n\n<i>Simply type your search keyword if its available bot will fetch files for you.Files may not have caption we will fix it soon</i>`,{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
                 [{ text: "▶ Next", callback_data: 'helpNext'}],
-                [{text:'🎲Clone',url:'t.me/filestoringbot'}]
+                [{text:'🎲Clone',url:'https://github.com/Kunal-Diwan/JsFileStoreBot'}]
             ]
         }
     })
 })
 
-bot.hears('♻Share',(ctx)=>{
+bot.hears('↗️ Share ↗️',(ctx)=>{
     ctx.deleteMessage()
     ctx.reply(`❤ Hi <b>${ctx.from.first_name}</b> thanks for helping us.Click share button below and share our channel as a token of support`,{
         parse_mode:'HTML',
